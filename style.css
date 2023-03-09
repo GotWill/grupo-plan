@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root{
+  --background: #1e1e1e;
+  --white: #e2e2e2;
+  --border: #3e3e3e;
+  --text-primary: #939598;
+  --text-primary-link: #F8F9FA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: var(--background);
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+}
+
+main {
+ width: 100%;
+}
+
+.sidebar{
+  border-right: 1px solid var(--border);
+  width: 250px;
+  min-height: 100vh;
+
+}
+
+
+.container_img img{
+  width: 70%;
+}
+
+
+.container_nav_bar nav {
+  border-bottom: 1px solid var(--border);
+}
+
+.container_nav_bar nav .container_nav_bar_img {
+  text-align: center;
+  padding: 48px 16px 10px;
+  width: 100%;
+}
+
+.container_nav_bar nav .container_nav_bar_img img {
+  width: 70%;
+  height: 68px;
+}
+
+.container_nav_bar nav .container_nav_bar_img a:hover {
+  opacity: 0.72;
+}
+
+.container_nav_bar ul {
+  list-style: none;
+  padding: 15px 40px;
+}
+
+.container_nav_bar ul li a {
+  text-decoration: none;
+  color: var( --text-primary-link);
+  font-size: 15px;
+}
+.container_nav_bar ul li a:hover {
+  color: var(--white);
+  transition: ease-in-out 0.2s;
+  opacity: 0.7;
+
+}
+.container_nav_bar ul li {
+ padding: 1.6rem 0;
+}
+
+.container_nav_bar ul li .before{
+  position: absolute;
+  z-index: -1;
+  color: #292929;
+  font-size: 60px;
+  line-height: 0;
+  font-weight: 700;
+  margin-top: 10px;
+}
+ .info .before{
+  position: absolute;
+  z-index: -1;
+  color: #292929;
+  font-size: 60px;
+  line-height: 0;
+  font-weight: 700;
+  margin-top: 10px;
+ }
+ .info .text{
+  color: var(--text-primary);
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.info_nav_foother{
+  padding: 6px 40px;
+  margin-top: 25px;
+}
+
+.icon{
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 10px;
+
+
+}
+.icon i {
+  color: var(--white);
+}
+
+
+.games {
+  min-height: 100vh;
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+
+}
+
+.games .container, .cases-games .container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 40px;
+  width: 600px;
+}
+
+
+.games .container .before {
+  color: #292929;
+  font-size: 100px;
+  line-height: 0;
+  font-weight: 700;
+}
+
+.games .container .content p {
+  color: var(--white);
+  margin-top: -25px;
+}
+
+
+
+.games .container .content h3 {
+  color: var(--text-primary);
+  font-size: 25px;
+}
+
+.games .container .info{
+ position: relative;
+ top: 20px;
+ color: var(--text-primary);
+}
+
+.games .container .info h3 {
+  line-height: 80px;
+  font-size: 25px;
+}
+
+.games .container .info .line-height{
+  margin-top: 30px;
+  color: var(--white);
+  font-size: 13px;
+}
+
+.containers_cards{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.containers_cards .card {
+  width: 200px;
+}
+
+.containers_cards .card img {
+  width: 100%;
+}
+
+.containers_cards .card p{
+  color: var(--white);
+  line-height: 27px;
+}
